@@ -1,0 +1,16 @@
+# ★넷리파이는 **리포 뿌리**를 내보낸다. 그러면 README 만 올라가고 사이트는 빈 화면이 된다.
+#   굽는 과정이 없는 정적 사이트이므로 `command` 는 비우고 `publish` 만 못 박는다.
+[build]
+  publish = "public"
+  command = ""
+
+# public/_headers 로도 되지만, 여기 적어 두면 설정이 한자리에 모인다.
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/s.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
