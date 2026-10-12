@@ -161,7 +161,9 @@ h1{font-size:30px;line-height:1.3;letter-spacing:-.025em;margin:0 0 12px;font-we
 .courses{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .cs{background:#1C1612;border:1px solid #2F261D;border-radius:20px;overflow:hidden;
   display:flex;flex-direction:column}
-.cs img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+/* ★원본이 9:16 세로 사진이다. 16:10 으로 자르면 **얼굴이 잘려 몸통만** 남는다(실측).
+   세로에 가깝게 두고 위쪽을 보여 준다. */
+.cs img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 18%}
 .csb{padding:18px 20px 20px}
 .csno{color:#E7A93F;font-size:13px;font-weight:800;letter-spacing:.2em}
 .cs h3{margin:4px 0 8px;font-size:20px;font-weight:800;letter-spacing:-.02em}
