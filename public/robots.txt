@@ -1,0 +1,16 @@
+User-agent: Yeti
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nuvella-therapy.pages.dev/sitemap.xml
+Sitemap: https://nuvella-therapy.pages.dev/sitemap-main.xml
+Sitemap: https://nuvella-therapy.pages.dev/sitemap-region.xml
+Sitemap: https://nuvella-therapy.pages.dev/sitemap-shop1.xml
+Sitemap: https://nuvella-therapy.pages.dev/sitemap-latest.xml
+Sitemap: https://nuvella-therapy.pages.dev/rss.xml

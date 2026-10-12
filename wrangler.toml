@@ -1,0 +1,6 @@
+# ★클라우드플레어 **페이지**용 설정이다.
+#   `pages_build_output_dir` 이 없으면 클라우드플레어가 이 파일을 Workers 설정으로 읽고 거절한다
+#   (나울에서 한 번 막혔던 자리).
+name = "nuvella-therapy"
+compatibility_date = "2026-10-12"
+pages_build_output_dir = "./public"
